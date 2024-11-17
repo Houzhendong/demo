@@ -1,0 +1,161 @@
+@font-face {
+    src: url('./fonts/BentonSans-Medium.woff2') format('woff2');
+    font-family: BentonSans;
+    font-display: swap;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+}
+
+body {
+    font-family: BentonSans;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #939393;
+
+}
+
+a {
+    text-decoration: none;
+    color: #979797;
+}
+
+p {
+    font-size: 16px;
+}
+
+.title-1 {
+    font-size: 31px;
+}
+
+.title-2 {
+    font-size: 25px;
+}
+
+.dropdown-exhibitions {
+    border: 1px solid !important;
+    width: 113px;
+    height: 34px;
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+.container-fluid {
+    padding: 0;
+    /*	max-width: 1680px;*/
+    /* overflow-x: hidden;*/
+}
+
+.nav-up {
+    top: -100px;
+    transition: 0.5s;
+
+}
+
+.nav-down {
+    transition: 0.5s;
+}
+
+.bg-light {
+    background-color: #fff !important;
+    height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    /* width: 95%;*/
+    margin: auto;
+}
+
+.nav-item {
+    padding-right: 10px;
+}
+
+.navbar-nav {
+    white-space: nowrap;
+}
+
+@media (min-width: 1281px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+
+        padding-left: 39px;
+
+    }
+
+    .align {
+        padding: 5% 9% 5% 9%;
+        text-align: center;
+    }
+
+    .alignexhibitions {
+        padding: 20% 9% 20% 9%;
+        text-align: center;
+
+        margin: auto;
+    }
+
+    .viewinghome {
+        font-weight: normal;
+        color: #000;
+        font-size: 12px;
+        line-height: 1.3rem;
+
+
+
+    }
+
+    .heading {
+        font-weight: normal;
+        font-size: 33px;
+
+    }
+
+    .head {
+        font-weight: normal;
+        font-size: 2.0rem;
+
+    }
+
+    .align {
+        width: 100%;
+        text-align: center;
+    }
+
+    .paragrapheVR {
+        color: #000;
+        font-size: 14px;
+        padding: 0% 11% 0% 11%;
+        line-height: 45px;
+    }
+
+    .paragrapheVRT {
+        color: #000;
+        font-size: 14px;
+        padding: 35% 0% 35% 0%;
+        line-height: 45px;
+    }
+
+    .paragraphe {
+        width: 100%;
+        color: #000;
+        font-size: 14px;
+        line-height: 45px;
+    }
+
+    .padimgvr {
+        padding-top: 35%;
+    }
+
+    .btn-available1 {
+        border-radius: 0px;
+        border: 1px solid #000;
+        color: #000;
+
+        background-color: #fff;
+        padding: 1% 2% 1% 2%;
+        /* margin-top: 5%; */
+        background-color: transparent;
+        float: right;
+    }
+
+
+}
