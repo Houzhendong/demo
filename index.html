@@ -18,7 +18,7 @@
                 </a>
             </h1>
 
-            <button class="navbar-toggler ouline" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler ouline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="https://www.operagallery.com/contact">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#search" class="search-form-tigger nav-link" data-toggle="search-form"><svg
+                        <a href="#search" class="search-form-tigger nav-link" data-bs-toggle="search-form"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -79,7 +79,7 @@
     <section id="slider">
         <div class="row my-md-5 py-md-4">
             <div class="col-12 ">
-                <div class="carousel" data-pause="false" data-bs-ride="carousel" id="homeslider">
+                <div class="carousel slide" data-bs-pause="false" data-bs-ride="carousel" id="homeslider">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-center align-items-center">
@@ -183,18 +183,29 @@
 
                     <div class="col-12 p-0  offset-md-5 col-md-6 ">
                         <ol class="carousel-indicators d-none d-md-flex">
-                            <li class="active" data-slide-to="0" data-target="#homeslider"></li>
-                            <li class="" data-slide-to="1" data-target="#homeslider"></li>
-                            <li class="" data-slide-to="2" data-target="#homeslider"></li>
+                            <li class="active" data-bs-slide-to="0" data-bs-target="#homeslider"></li>
+                            <li class="" data-bs-slide-to="1" data-bs-target="#homeslider"></li>
+                            <li class="" data-bs-slide-to="2" data-bs-target="#homeslider"></li>
                         </ol>
                     </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#homeslider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#homeslider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
 
 
 
-        <div class="row pb-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2500" id="vr">
+        <div class="row pb-5 aos-init aos-animate" data-bs-aos="fade-up" data-aos-duration="2500" id="vr">
 
 
 
@@ -238,17 +249,25 @@
         </div>
     </section>
 
-    <!-- <script>
-        const myCarouselElement = document.querySelector('homeslider')
+    <script>
+        // const myCarouselElement = document.querySelector('#homeslider')
 
         // const carousel = new bootstrap.Carousel(myCarouselElement, {
         //     interval: 2000,
         //     touch: false
         // })
-        const carousel = bootstrap.Carousel.getInstance(myCarouselElement)
+        // const carousel = bootstrap.Carousel.getInstance(myCarouselElement)
+        // carousel.cricle()
+
+        const myCarouselElement = document.querySelector('#homeslider');
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 3000, // Auto-play every 3 seconds
+            ride: 'carousel', // Starts cycling automatically
+        });
         carousel.cricle()
 
-    </script> -->
+    </script>
 </body>
 
 </html>
