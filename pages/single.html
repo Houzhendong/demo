@@ -1,0 +1,347 @@
+<div id="single">
+    <h2>Single</h2>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Dashboard</li>
+            <li class="breadcrumb-item active" aria-current="page">Single</li>
+        </ol>
+    </nav>
+    <div class="row row-cols-1 row-cols-lg-1">
+        <div class="col-6">
+            <div class="p-3 border bg-light radius single">
+
+                <div class="options">
+                    <div class="info">
+                        <p>Order ID: #FC001</p>
+                        <span>Pending</span>
+                    </div>
+                    <div class="operation">
+                        <select class="form-select" aria-label="Default select">
+                            <option selected>Status</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="btn btn-primary save" type="submit">Save</button>
+                        <button class="btn btn-primary download" type="submit">Download Invoice</button>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <div class="row row-cols-1 row-cols-lg-3 information-title">
+                        <div class="col">
+                            <p>Customer Details</p>
+                        </div>
+                        <div class="col">
+                            <p>Shipping Address</p>
+                        </div>
+                        <div class="col">
+                            <p>Order Details
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 information-content">
+                        <div class="col">
+                            <p>John Alex</p>
+                        </div>
+                        <div class="col">
+                            <p>Gerg Harvell</p>
+                        </div>
+                        <div class="col">
+                            <p>Order ID:<span>FC001</span></p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 information-content">
+                        <div class="col">
+                            <p>anderalex@example.com</p>
+                        </div>
+                        <div class="col">
+                            <p>568, Suite Ave.</p>
+                        </div>
+                        <div class="col">
+                            <p>Order Date:<span>October 22, 2023</span></p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 information-content">
+                        <div class="col">
+                            <p>+998 99 22123456</p>
+                        </div>
+                        <div class="col">
+                            <p>Austrlia, 235153</p>
+                        </div>
+                        <div class="col">
+                            <p>Order Total:<span>$734.28</span></p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 information-content">
+                        <div class="col">
+                            <p class="view-profile">View Profile</p>
+                        </div>
+                        <div class="col">
+                            <p>Contact No. +91 99999 12345</p>
+                        </div>
+                        <div class="col">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="img-txt"><img src="../assets/images/td1.jpg" alt=""><span>Haldiram's Sev
+                                    Bhujia</span></td>
+                            <td>$18.00</td>
+                            <td>1</td>
+                            <td>$18.00</td>
+                        </tr>
+                        <tr>
+                            <td class="img-txt"><img src="../assets/images/td2.jpg" alt=""><span>Slurrp Millet
+                                    Chocolate</span></td>
+                            <td>24.00</td>
+                            <td>1</td>
+                            <td>$24.00</td>
+                        </tr>
+                        <tr>
+                            <td class="img-txt"><img src="../assets/images/td3.jpg" alt=""><span>Amul Butter - 500
+                                    g</span></td>
+                            <td>$32.00</td>
+                            <td>1</td>
+                            <td>$32.00</td>
+                        </tr>
+                        <tr>
+                            <td class="img-txt"><img src="../assets/images/td4.jpg" alt=""><span>Roast Ground
+                                    Coffee</span></td>
+                            <td>$3.00</td>
+                            <td>2</td>
+                            <td>$6.00</td>
+                        </tr>
+                        <tr class="color-black">
+                            <td class="hide-border"></td>
+                            <td class="hide-border"></td>
+                            <td>Sub Total :</td>
+                            <td>$80.00</td>
+                        </tr>
+                        <tr class="color-black">
+                            <td class="hide-border"></td>
+                            <td class="hide-border"></td>
+                            <td>Shipping Cost</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr class="color-black">
+                            <td class="hide-border"></td>
+                            <td class="hide-border"></td>
+                            <td class="hide-border">Grand Total</td>
+                            <td class="hide-border">$90.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="p-3 border bg-light payment-info">
+                            <p class="title">Payment Info</p>
+                            <span>Cash on Delivery</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light notes">
+                            <p class="title">Notes</p>
+                            <textarea class="form-control" rows="3" placeholder="Write note for order"></textarea>
+                            <button class="btn btn-primary save-notes" type="submit">Save Notes</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #single {
+        .radius {
+            border-radius: 10px;
+            border: none !important;
+            box-shadow: 0 0 20px #EEEFF2;
+            background-color: white !important;
+        }
+
+        .single {
+            margin-top: 20px;
+
+            .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .info {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-size: 26px;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        background-color: #FFF3CD;
+                        font-size: 10px;
+                        padding: 3px 10px;
+                        border-radius: 15px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .operation {
+                    display: flex;
+                    height: 40px;
+
+
+                    button {
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+
+                    select {
+                        font-size: 14px;
+                        width: 120px;
+                    }
+
+                    .save {
+                        background-color: #0AAD0B;
+                        border-color: #0AAD0B;
+                    }
+
+                    .download {
+                        background-color: #889396;
+                        border-color: #889396;
+                        width: 160px;
+                    }
+                }
+            }
+
+            .information {
+                margin-top: 30px;
+
+                .row {
+                    margin: 7px 0;
+                }
+
+                .information-content {
+                    color: #5C6D75;
+                    font-size: 14px;
+
+                    span {
+                        color: black;
+                    }
+                }
+
+                .view-profile {
+                    color: #0AAD0B;
+                }
+
+                .view-profile:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .table {
+                margin-top: 50px;
+                color: #5C6D75;
+
+                thead tr {
+                    font-size: 16px;
+                    background-color: #F1F3F2
+                }
+
+                tbody tr {
+                    height: 75px;
+                }
+
+                th {
+                    vertical-align: middle;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    font-weight: normal;
+                }
+
+                td {
+                    vertical-align: middle;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                .hide-border {
+                    border-bottom: none;
+                }
+
+                .color-black {
+                    color: black;
+                }
+
+                .img-txt {
+                    img {
+                        width: 48px;
+                        margin-right: 25px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: black;
+                    }
+                }
+
+
+            }
+
+            .payment-info {
+                border: none !important;
+                background-color: white !important;
+
+                p {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: #5C6D75;
+                }
+            }
+
+            .notes {
+                border: none !important;
+                background-color: white !important;
+
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                textarea {
+                    margin-top: 10px;
+                    color: #889397;
+                    font-size: 14px;
+                }
+
+                .save-notes {
+                    margin-top: 10px;
+                    background-color: #0AAD0B;
+                    border-color: #0AAD0B;
+                }
+
+            }
+        }
+    }
+</style>
