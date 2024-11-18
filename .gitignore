@@ -1,1 +1,19 @@
 .idea/
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build directory
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
