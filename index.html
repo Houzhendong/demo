@@ -5,233 +5,68 @@
     <meta charset="UTF-8" />
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="nav-down">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light pl-0" role="navigation">
-            <h1>
-                <a class="navbar-brand" href="https://www.operagallery.com" style="font-size: 40px; color: red;">
-                    <img class="img-fluid taille-logo" src="https://www.operagallery.com/img/opera-gallery-logo.svg"
-                        alt="Opera Gallery is an international gallery specializing in modern and contemporary art with 16 locations worldwide.">
-                </a>
-            </h1>
-            <button class="navbar-toggler ouline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav pt-3 pt-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="https://www.operagallery.com/artists">SWEATERS
-                            <span class="sr-only">
-                                (current)
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item  ">
-                        <a class="nav-link" href="https://www.operagallery.com/exhibitions">BOTTOMS</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="https://www.operagallery.com/viewing-rooms">ACCESSORIES</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/about">ABOUT</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="https://www.operagallery.com/contact">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#search" class="search-form-tigger nav-link" data-bs-toggle="search-form"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
-                                </path>
-                            </svg></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class=" wrapper">
-            <div class="col-md-12 p-0">
-                <div class="search-form-wrapper my-3">
-                    <form action="/search" method="POST"
-                        class="search-form form-inline d-flex  md-form form-sm active-cyan active-cyan-2">
-                        <input type="hidden" name="_token" value="H6hvwDBZaIF6r0GfDT3T7lFvU7t0wL3xrZb7BjIc">
-                        <div class="border py-1 mr-2">
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pl-0" role="navigation">
 
-                            <input class="form-control form-control-sm border-0 w-100 p-0 px-2 py-2" type="text"
-                                name="q" placeholder="Search..." aria-label="Search">
-                        </div>
-                        <div class="position-absolute right">
-                            <button type="submit" class="search-btn mx-2 px-2 py-2">Search</button>
-                        </div>
-                    </form>
+        <a class="navbar-brand" href="javascript:;">
+            <img class="img-fluid taille-logo" src="https://www.operagallery.com/img/opera-gallery-logo.svg" alt="Opera Gallery is an international gallery specializing in modern and contemporary art with 16 locations worldwide.">
+        </a>
 
-                </div>
-            </div>
+        <button class="navbar-toggler ouline" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav pt-3 pt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" data-page="artists" href="javascript:;">ARTISTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-page="exhibittons" href="javascript:;">EXHIBITIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-page="viewing_rooms" href="javascript:;">VIEWING ROOMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-page="about" href="javascript:;">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-page="contact" href="javascript:;">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#search" class="search-form-tigger nav-link" data-toggle="search-form"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg></a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section id="slider">
-        <div class="row my-md-5 py-md-4">
-            <div class="col-12 ">
-                <div class="carousel slide" data-bs-pause="false" data-bs-ride="carousel" id="homeslider">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row justify-content-center align-items-center">
-                                <div
-                                    class="col-12 order-2 p-0 col-md-4 mr-auto order-md-1 animate__animated animate__fadeInDown animate__slow">
-                                    <div class="py-3 text-left">
-                                        <a
-                                            href="https://www.operagallery.com/event/pierre-dunoyer-object-of-thought-tableaux-1986-2008">
-                                            <h2 class="">
-                                                Pierre Dunoyer, Object of Thought: Tableaux 1986 – 2008
-                                            </h2>
-                                        </a>
-                                        <div class="date text-left">
-                                            <span>
-                                                06 - 27 November 2024
-                                            </span>
-                                        </div>
-                                        <div class="date ">
-                                            Dubai
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="col-12 p-0 order-1 col-md-7  mr-auto order-md-2 animate__animated animate__fadeInRight animate__slow">
-                                    <a
-                                        href="https://www.operagallery.com/event/pierre-dunoyer-object-of-thought-tableaux-1986-2008">
-                                        <img class="img-fluid w-100"
-                                            src="https://www.operagallery.com/storage/sliders/Dunoyer_Rouge_1986.jpg">
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row justify-content-center align-items-center">
-                                <div
-                                    class="col-12 order-2 p-0 col-md-4 mr-auto order-md-1 animate__animated animate__fadeInDown animate__slow">
-                                    <div class="py-3 text-left">
-                                        <a href="https://www.operagallery.com/event/30-years-30-artists">
-                                            <h2 class="">
-                                                30 Years – 30 Artists
-                                            </h2>
-                                        </a>
+</div>
+</div>
 
 
-                                        <div class="date  text-left">
+<div class="tab-content" id="content"></div>
 
-                                            <span>
-                                                15 November
-                                                - 13 December 2024
-                                            </span>
-                                        </div>
-                                        <div class="date ">
-                                            Geneva
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="col-12 p-0 order-1 col-md-7  mr-auto order-md-2 animate__animated animate__fadeInRight animate__slow">
-                                    <a href="https://www.operagallery.com/event/30-years-30-artists">
-                                        <img class="img-fluid w-100"
-                                            src="https://www.operagallery.com/storage/sliders/Opera Gallery Geneva_30 Years - 30 Artists.jpg">
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row justify-content-center align-items-center">
-                                <div
-                                    class="col-12 order-2 p-0 col-md-4 mr-auto order-md-1 animate__animated animate__fadeInDown animate__slow">
-                                    <div class="py-3 text-left">
-                                        <a
-                                            href="https://www.operagallery.com/news/celebrating-30-years-of-opera-gallery">
-                                            <h2 class="">
-                                                30 Years of Opera Gallery
-                                            </h2>
-                                        </a>
-                                        <div class="date  text-left">
-                                            <span>
-                                            </span>
-                                        </div>
-                                        <div class="date ">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="col-12 p-0 order-1 col-md-7  mr-auto order-md-2 animate__animated animate__fadeInRight animate__slow">
-                                    <a href="https://www.operagallery.com/news/celebrating-30-years-of-opera-gallery">
-                                        <img class="img-fluid w-100"
-                                            src="https://www.operagallery.com/storage/sliders/Opera Gallery_Celebrating 30 Years.png">
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 p-0  offset-md-5 col-md-6 ">
-                        <ol class="carousel-indicators d-none d-md-flex">
-                            <li class="active" data-bs-slide-to="0" data-bs-target="#homeslider"></li>
-                            <li class="" data-bs-slide-to="1" data-bs-target="#homeslider"></li>
-                            <li class="" data-bs-slide-to="2" data-bs-target="#homeslider"></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row pb-5 aos-init aos-animate" data-bs-aos="fade-up" data-aos-duration="2500" id="vr">
-            <div class="col-12 col-md-6 mt-5">
-                <a
-                    href=" https://www.operagallery.com/viewing-rooms/gustavo-nazareno-orixas-personal-tales-on-portraiture ">
-                    <img alt="" class="img-fluid"
-                        src="https://www.operagallery.com/storage/viewingrooms/Opera-Gallery-Gustavo-Nazareno-Orixaìs-Personal-Tales-on-Portraiture-Eva-Herzog-Photography.png">
-                </a>
-            </div>
-            <div class="col-12 align-self-center col-md-6 text-center">
-                <div class="title pt-3 pb-md-3">
-                    VIEWING ROOM
-                </div>
-                <a
-                    href=" https://www.operagallery.com/viewing-rooms/gustavo-nazareno-orixas-personal-tales-on-portraiture  ">
-                    <h2 class="subtitle">
-                        Gustavo Nazareno, ‘Orixás: Personal Tales on Portraiture’
-                    </h2>
-                </a>
-
-            </div>
-            <div class="col-12 col-md-6 mt-5">
-                <a href=" https://www.operagallery.com/viewing-rooms/the-collector-1994 ">
-                    <img alt="" class="img-fluid"
-                        src="https://www.operagallery.com/storage/viewingrooms/Opera-Gallery-Singapore-The-Collector-©-Oddinary-studios.jpg">
-                </a>
-            </div>
-            <div class="col-12 align-self-center col-md-6 text-center">
-                <div class="title pt-3 pb-md-3">
-                    VIEWING ROOM
-                </div>
-                <a href=" https://www.operagallery.com/viewing-rooms/the-collector-1994  ">
-                    <h2 class="subtitle">
-                        The Collector 1994
-                    </h2>
-                </a>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+<script>
+    $(function() {
+
+        setContent("artists")
+
+        // 菜单切换
+        $(document).on('click', '.nav-link', function () {
+            setContent($(this).data("page"))
+        });
+
+        function setContent(page) {
+            $("#content").load("./pages/" + page + ".html");
+        }
+    });
+</script>
 
 </html>
