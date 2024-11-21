@@ -10,56 +10,61 @@
 </head>
 
 <body>
-<div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pl-0" role="navigation">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pl-0" role="navigation">
 
-        <a class="navbar-brand" href="javascript:;">
-            <img class="img-fluid taille-logo" src="https://www.operagallery.com/img/opera-gallery-logo.svg" alt="Opera Gallery is an international gallery specializing in modern and contemporary art with 16 locations worldwide.">
-        </a>
+            <a class="navbar-brand" data-page="artists" href="javascript:;">
+                <img class="img-fluid taille-logo" src="https://www.operagallery.com/img/opera-gallery-logo.svg"
+                    alt="Opera Gallery is an international gallery specializing in modern and contemporary art with 16 locations worldwide.">
+            </a>
 
-        <button class="navbar-toggler ouline" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav pt-3 pt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" data-page="artists" href="javascript:;">ARTISTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-page="exhibittons" href="javascript:;">EXHIBITIONS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-page="viewing_rooms" href="javascript:;">VIEWING ROOMS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-page="about" href="javascript:;">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-page="contact" href="javascript:;">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#search" class="search-form-tigger nav-link" data-toggle="search-form"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                    </svg></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <button class="navbar-toggler ouline" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav pt-3 pt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="sweater" href="javascript:;">SWEATERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="exhibittons" href="javascript:;">BOTTOMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="viewing_rooms" href="javascript:;">ACCESSORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="about" href="javascript:;">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="contact" href="javascript:;">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#search" class="search-form-tigger nav-link" data-toggle="search-form"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                </path>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-</div>
-</div>
-
-
-<div class="tab-content" id="content"></div>
-
+    <div class="tab-content" id="content"></div>
 </body>
 <script>
-    $(function() {
+    $(function () {
 
         setContent("artists")
 
-        // 菜单切换
         $(document).on('click', '.nav-link', function () {
+            setContent($(this).data("page"))
+        });
+
+        $(document).on('click', '.navbar-brand', function () {
             setContent($(this).data("page"))
         });
 
