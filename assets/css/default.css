@@ -230,3 +230,52 @@ p {
 .row {
     margin: 0;
 }
+
+.img-hover-zoom {
+
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform 4s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.artist-block {
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    padding-bottom: 11px;
+}
+
+.nav-tabs .nav-link {
+    font-family: 'BentonSans';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    font-family: 'BentonSans';
+    border-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #fff;
+}
+
+.nav-link {
+    display: block;
+    padding-left: 0;
+    color: #979797;
+}
