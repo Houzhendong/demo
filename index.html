@@ -31,10 +31,10 @@
                         <a class="nav-link" data-page="sweater" href="javascript:;">SWEATERS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-page="exhibittons" href="javascript:;">BOTTOMS</a>
+                        <a class="nav-link" data-page="bottom" href="javascript:;">BOTTOMS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-page="viewing_rooms" href="javascript:;">ACCESSORIES</a>
+                        <a class="nav-link" data-page="accessory" href="javascript:;">ACCESSORIES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-page="about" href="javascript:;">ABOUT</a>
@@ -58,13 +58,14 @@
 
     <div class="tab-content" id="content"></div>
 </body>
+
 </html>
 <script>
     $(function () {
 
         AOS.init();
 
-        setContent("artists")
+        setContent("main")
 
         $(document).on('click', '#navbarNav .nav-link', function () {
             setContent($(this).data("page"))
