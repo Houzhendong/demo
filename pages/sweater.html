@@ -4,7 +4,7 @@
         <div class="row  pt-md-5">
 
 
-            <ul class="nav nav-tabs py-3 py-md-0" id="myTab" role="tablist">
+            <ul class="nav nav-tabs py-3 py-md-0" id="sweaterTab" role="tablist">
 
                 <li class="nav-item pl-1" role="presentation">
                     <a data-bs-toggle="tab" data-bs-target="#works" class="nav-link" data-toggle="tab"
@@ -35,9 +35,7 @@
                 </div>
 
                 <div aria-labelledby="list-tab" class="tab-pane fade" id="list" role="tabpanel">
-                    <div class="row text-center py-5">
-
-                    </div>
+                    <div class="row text-center py-5"></div>
                 </div>
             </div>
         </div>
@@ -57,6 +55,26 @@
             { "name": "Mel Bochner" },
             { "name": "Fernando Botero" },
             { "name": "Andre Brasilier" },
+            { "name": "Georg Baselitz" },
+            { "name": "Jean Charles Blais" },
+            { "name": "Mel Bochner" },
+            { "name": "Mel Bochner" },
+            { "name": "Fernando Botero" },
+            { "name": "Andre Brasilier" },
+            { "name": "Jean Charles Blais" },
+            { "name": "Mel Bochner" },
+            { "name": "Fernando Botero" },
+            { "name": "Andre Brasilier" },
+            { "name": "Andre Brasilier" },
+            { "name": "Mel Bochner" },
+            { "name": "Andre Brasilier" },
+            { "name": "Georg Baselitz" },
+            { "name": "Pablo Atchugarry" },
+            { "name": "Jean Charles Blais" },
+            { "name": "Georg Baselitz" },
+            { "name": "Georg Baselitz" },
+            { "name": "Fernando Botero" },
+            { "name": "Pedro Almodóvar" },
             { "name": "Yasmina Alaoui" },
             { "name": "Pedro Almodóvar" },
             { "name": "Karel Appel" },
@@ -67,95 +85,53 @@
             { "name": "Mel Bochner" },
             { "name": "Fernando Botero" },
             { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
             { "name": "Georg Baselitz" },
             { "name": "Jean Charles Blais" },
             { "name": "Mel Bochner" },
             { "name": "Fernando Botero" },
             { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" },
-            { "name": "Yasmina Alaoui" },
-            { "name": "Pedro Almodóvar" },
-            { "name": "Karel Appel" },
-            { "name": "Ron Arad" },
-            { "name": "Pablo Atchugarry" },
-            { "name": "Georg Baselitz" },
-            { "name": "Jean Charles Blais" },
-            { "name": "Mel Bochner" },
-            { "name": "Fernando Botero" },
-            { "name": "Andre Brasilier" }
         ];
 
+        var tab = "#represented";
+
+        var current = 0;
+
+        var size = 15
+
+        $(document).on('click', '#sweaterTab a', function () {
+            tab = $(this).attr('data-bs-target');
+            current = 0;
+        });
+
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+                current += size;
+                switch (tab) {
+                    case "#represented":
+                        renderRepresentedContent()
+                        break;
+                    case "#works":
+                        renderWorksContent()
+                        break;
+                    case "#list":
+                        renderListContent()
+                        break;
+                }
+            }
+        });
 
         function renderWorksContent() {
-            var content = "";
-            $.each(data, function (index, value) {
-                content += '<div class="col-6 col-md-4 artist-block aos-init" data-aos="fade-up" data-aos-duration="2500">';
+
+            var currentData = data.slice(current, current + size);
+
+            $.each(currentData, function (index, value) {
+                var content = "";
+                var aos = "aos-init";
+                if (current) {
+                    aos += "aos-init aos-animate";
+                }
+                content += '<div class="col-6 col-md-4 artist-block ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
                 content += '<div class="img-hover-zoom img-hover-zoom--xyz position-relative">';
                 content += '<a href="javascript:;">';
                 content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/small/' + index % 10 + '.jpg"/>';
@@ -167,14 +143,22 @@
                 content += '</div>';
                 content += '</div>';
                 content += '</div>';
+                $("#works .text-center").append(content);
             })
-            $("#works .text-center").html(content);
+
         }
 
         function renderRepresentedContent() {
-            var content = "";
-            $.each(data, function (index, value) {
-                content += '<div class="col-6 col-md-4 artist-block aos-init" data-aos="fade-up" data-aos-duration="2500">';
+
+            var currentData = data.slice(current, current + size);
+
+            $.each(currentData, function (index, value) {
+                var content = "";
+                var aos = "aos-init";
+                if (current) {
+                    aos += "aos-init aos-animate";
+                }
+                content += '<div class="col-6 col-md-4 artist-block ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
                 content += '<div class="img-hover-zoom img-hover-zoom--xyz position-relative">';
                 content += '<a href="javascript:;">';
                 content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/small/' + index % 10 + '.jpg"/>';
@@ -186,20 +170,20 @@
                 content += '</div>';
                 content += '</div>';
                 content += '</div>';
+                $("#represented .text-center").append(content);
             })
-            $("#represented .text-center").html(content);
         }
 
         function renderListContent() {
-            var content = "";
             $.each(data, function (index, value) {
+                var content = "";
                 content += '<div class="col-6 col-md-3 animate__animated animate__fadeInUp animate__slower">';
                 content += '<div class="py-3 text-uppercase">';
                 content += '<a class="list-name" href="javascript:;">' + value.name + '</a>';
                 content += '</div>';
                 content += '</div>';
+                $("#list .text-center").append(content);
             })
-            $("#list .text-center").html(content);
         }
 
         renderRepresentedContent();
@@ -312,6 +296,12 @@
         color: #000;
         padding: 10px 30px;
         background-color: transparent;
+    }
+
+    .artist-block {
+        padding-left: 5.5px;
+        padding-right: 5.5px;
+        padding-bottom: 11px;
     }
 
     /* Fin Single Artist Page */
