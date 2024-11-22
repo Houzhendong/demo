@@ -331,6 +331,25 @@ h2 {
     color: #979797;
 }
 
+
+
+.taille-logo {
+    width: 422px;
+    height: 36px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1024px) {
+    .taille-logo {
+        width: 322px;
+        height: 26px;
+    }
+
+    .h-60 {
+        height: 100%;
+    }
+}
+
 #return-to-top {
     z-index: 1039;
     position: fixed;
@@ -375,3 +394,280 @@ h2 {
     color: #fff;
     top: 5px;
 }
+
+footer {
+    background-color: #f9f9f9;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.wrap-footer {
+    font-size: 2.5rem;
+}
+
+#SubsEmail {
+    font-size: 12px;
+    height: 50px;
+}
+
+#myTabContent {
+    padding: 0 !important;
+}
+
+/* Bottom Page */
+
+.gallery-nav {
+    padding: 0 10px;
+}
+
+.gallery-nav li {
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #000;
+    font-size: 12px;
+    line-height: 1.3rem;
+}
+
+.gallery {
+    font-family: 'BentonSans';
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-right: 12px;
+    color: #333 !important;
+    font-weight: 500;
+    word-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.event_name {
+    color: #343434;
+    font-size: 28px;
+}
+
+.event_date {
+    color: #979797;
+    font-size: 12px;
+}
+
+/* Fin Exhibitions page  */
+
+/* Artists Page */
+
+.active_list {
+    font-weight: 600 !important;
+    color: #000 !important;
+    border-bottom: 2px solid #DEDEDE;
+}
+
+#grid,
+#list {
+    font-weight: normal;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.3rem;
+    padding-bottom: 10px;
+
+}
+
+#grid {
+    margin: 0 0px;
+}
+
+.image {
+    max-height: 260px;
+}
+
+.artist {
+    position: absolute;
+    bottom: 26px;
+    color: #fff;
+    left: 30px;
+}
+
+.list-name {
+    font-family: 'bentonsans_bookregular';
+    letter-spacing: 2px;
+}
+
+.bg-footer {
+    background-color: #f9f9f9;
+}
+
+.artist a {
+    letter-spacing: 2px;
+    font-family: 'bentonsans_bookregular';
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+}
+
+.btn-more {
+    font-size: 13px;
+    border-radius: 0px;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 30px 10px 30px;
+}
+
+.btn-more:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* Fin Artists Page */
+
+/* Single Artist Page */
+
+.artist_description p {
+    font-weight: normal;
+    color: #000;
+    font-size: 16px;
+    /*line-height: 1.3rem;*/
+}
+
+.artwork {
+    font-weight: normal;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.3rem;
+}
+
+img.artwork-img {
+    max-height: 500px;
+}
+
+.img-card-width {
+    width: 100%;
+}
+
+.btn-inquire {
+    border-radius: 0px;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 30px;
+    background-color: transparent;
+}
+
+.artist-block {
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    padding-bottom: 11px;
+}
+
+/* Fin Single Artist Page */
+
+/* About Page */
+#aboutContent {
+    justify-content: space-around;
+}
+
+#aboutContent p {
+    font-size: 14px;
+}
+
+#aboutContent h6 {
+    text-align: right;
+}
+
+/* Fin About Page */
+
+/* Contact Page */
+#grid {
+    margin: 0;
+    font-weight: normal;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.3rem;
+    padding-bottom: 10px;
+}
+#grid p {
+    margin: 0;
+    font-size: 14px;
+}
+#grid .title {
+    color: black;
+}
+
+/* Fin Contact Page */
+
+#accessoryContent {
+    margin-bottom: 3rem;
+}
+
+.right {
+    right: 0;
+    display: inline-flex;
+}
+
+button.search-btn {
+    width: 80px;
+    color: #fff;
+    background-color: #a5a5a5;
+    border: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 0 30px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 66%;
+}
+
+.wrapper input {
+    font-size: 12px;
+}
+
+.border {
+    width: 54%;
+}
+
+@media (min-width : 768px) {
+    .wrapper {
+        width: 100%;
+        margin: auto;
+        padding: 0 30px;
+        position: absolute;
+        background-color: #fff;
+        margin-top: 32%;
+    }
+
+    i#search {
+        display: inline-block;
+    }
+
+    .border {
+        width: 70%;
+    }
+}
+
+@media (min-width : 1024px) {
+    .wrapper {
+        width: 100%;
+        margin: auto;
+        padding: 0 30px;
+        position: absolute;
+        background-color: #fff;
+        margin-top: 0%;
+    }
+
+    .border {
+        width: 82%;
+    }
+}
+
+.search-form-wrapper {
+    display: none;
+}
+
+.search-form-wrapper.open {
+    display: block;
+}
+
+
