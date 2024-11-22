@@ -58,12 +58,15 @@
 
     <div class="tab-content" id="content"></div>
 </body>
+</html>
 <script>
     $(function () {
 
-        setContent("artists")
+        AOS.init();
 
-        $(document).on('click', '.nav-link', function () {
+        setContent("sweater")
+
+        $(document).on('click', '#navbarNav .nav-link', function () {
             setContent($(this).data("page"))
         });
 
@@ -76,5 +79,8 @@
         }
     });
 </script>
-
-</html>
+<style>
+    #myTabContent {
+        padding: 0 !important;
+    }
+</style>
