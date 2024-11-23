@@ -167,15 +167,59 @@ p {
 
 }
 
-#homeslider .carousel-indicators {
-    /*  justify-content: flex-start;
-   /* padding: 0 10px;*/
-    /*  margin: 0;*/
-    bottom: 75px;
-    /*  width: 50%;*/
+h2 {
+    color: #000;
 }
 
-#homeslider .carousel-indicators li {
+.date {
+    color: #000;
+    margin: 5px auto;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+#vr {
+    background-color: #fff !important;
+}
+
+#vr .title {
+    font-family: 'bentonsans_bookregular';
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #979797;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+}
+
+#homeslider {
+    height: 685px;
+}
+
+#homeslider .col-md-6 {
+    position: relative;
+}
+
+#homeslider .align-items-center {
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+#homeslider .carousel-indicators {
+    bottom: 0;
+    width: 88%;
+}
+
+#homeslider .carousel-indicators button {
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    border: 1px solid #fff;
     background-color: #fff;
 }
 
