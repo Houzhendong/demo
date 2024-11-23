@@ -16,16 +16,9 @@
 <body>
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light pl-0" role="navigation">
-
             <a class="navbar-brand" data-page="main" href="javascript:;">
-                <img class="img-fluid taille-logo" src="https://www.operagallery.com/img/opera-gallery-logo.svg"
-                    alt="Opera Gallery is an international gallery specializing in modern and contemporary art with 16 locations worldwide.">
+                <img class="img-fluid taille-logo" src="https://www.operagallery.com/img/opera-gallery-logo.svg" alt="Opera Gallery is an international gallery specializing in modern and contemporary art with 16 locations worldwide.">
             </a>
-
-            <button class="navbar-toggler ouline" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav pt-3 pt-lg-0">
                     <li class="nav-item">
@@ -44,29 +37,55 @@
                         <a class="nav-link" data-page="contact" href="javascript:;">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#search" class="search-form-tigger nav-link" data-toggle="search-form"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
+                        <a href="javascript:;" class="search-form-tigger nav-link" data-toggle="search-form">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
                                 </path>
-                            </svg></a>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="wrapper">
+            <div class="col-md-12 p-0">
+                <div class="search-form-wrapper my-3">
+                    <form method="POST" class="search-form form-inline d-flex  md-form form-sm active-cyan active-cyan-2">
+                        <div class="border py-1 mr-2">
+                            <input class="form-control form-control-sm border-0 w-100 p-0 px-2 py-2" type="text" name="q" placeholder="Search..." aria-label="Search">
+                        </div>
+                        <div class="position-absolute right">
+                            <button type="button" class="search-btn mx-2 px-2 py-2">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <a href="javascript:" id="return-to-top" style="display: inline;">
         <i aria-hidden="true" class="fa fa-chevron-up"></i>
     </a>
     <div class="tab-content" id="content"></div>
+    <footer>
+        <div class="container-fluid background-gray ">
+            <div style="background-color: #f9f9f9;" class="row pt-5">
+                <div class="col-xl-4 offset-xl-2 p-30">
+                    <div class="wrap-footer">
+                        Join our mailing list for updates about our artists, exhibitions, events, and more.
+                    </div>
+                    <form class="form-horizontal my-5" id="subscribeForm">
+                        <input type="hidden" name="_token" value="Fo6WmPTUYKT9Yc3JHuXwPTYIlj6f0WpuE5GOrPEV">
+                        <div class="input-group input-group-lg">
+                            <input type="email" id="SubsEmail" class="form-control form-control-sm rounded-0" name="email" placeholder="Email" required="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
 <script src="./assets/js/main.js"></script>
-<style>
-    #myTabContent {
-        padding: 0 !important;
-    }
-</style>
