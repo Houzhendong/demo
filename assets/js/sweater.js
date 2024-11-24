@@ -1,51 +1,51 @@
 $(function () {
 
     var data = [
-        {"name": "Yasmina Alaoui"},
-        {"name": "Pedro Almodóvar"},
-        {"name": "Karel Appel"},
-        {"name": "Ron Arad"},
-        {"name": "Pablo Atchugarry"},
-        {"name": "Georg Baselitz"},
-        {"name": "Jean Charles Blais"},
-        {"name": "Mel Bochner"},
-        {"name": "Fernando Botero"},
-        {"name": "Andre Brasilier"},
-        {"name": "Georg Baselitz"},
-        {"name": "Jean Charles Blais"},
-        {"name": "Mel Bochner"},
-        {"name": "Mel Bochner"},
-        {"name": "Fernando Botero"},
-        {"name": "Andre Brasilier"},
-        {"name": "Jean Charles Blais"},
-        {"name": "Mel Bochner"},
-        {"name": "Fernando Botero"},
-        {"name": "Andre Brasilier"},
-        {"name": "Andre Brasilier"},
-        {"name": "Mel Bochner"},
-        {"name": "Andre Brasilier"},
-        {"name": "Georg Baselitz"},
-        {"name": "Pablo Atchugarry"},
-        {"name": "Jean Charles Blais"},
-        {"name": "Georg Baselitz"},
-        {"name": "Georg Baselitz"},
-        {"name": "Fernando Botero"},
-        {"name": "Pedro Almodóvar"},
-        {"name": "Yasmina Alaoui"},
-        {"name": "Pedro Almodóvar"},
-        {"name": "Karel Appel"},
-        {"name": "Ron Arad"},
-        {"name": "Pablo Atchugarry"},
-        {"name": "Georg Baselitz"},
-        {"name": "Jean Charles Blais"},
-        {"name": "Mel Bochner"},
-        {"name": "Fernando Botero"},
-        {"name": "Andre Brasilier"},
-        {"name": "Georg Baselitz"},
-        {"name": "Jean Charles Blais"},
-        {"name": "Mel Bochner"},
-        {"name": "Fernando Botero"},
-        {"name": "Andre Brasilier"},
+        { "name": "Yasmina Alaoui" },
+        { "name": "Pedro Almodóvar" },
+        { "name": "Karel Appel" },
+        { "name": "Ron Arad" },
+        { "name": "Pablo Atchugarry" },
+        { "name": "Georg Baselitz" },
+        { "name": "Jean Charles Blais" },
+        { "name": "Mel Bochner" },
+        { "name": "Fernando Botero" },
+        { "name": "Andre Brasilier" },
+        { "name": "Georg Baselitz" },
+        { "name": "Jean Charles Blais" },
+        { "name": "Mel Bochner" },
+        { "name": "Mel Bochner" },
+        { "name": "Fernando Botero" },
+        { "name": "Andre Brasilier" },
+        { "name": "Jean Charles Blais" },
+        { "name": "Mel Bochner" },
+        { "name": "Fernando Botero" },
+        { "name": "Andre Brasilier" },
+        { "name": "Andre Brasilier" },
+        { "name": "Mel Bochner" },
+        { "name": "Andre Brasilier" },
+        { "name": "Georg Baselitz" },
+        { "name": "Pablo Atchugarry" },
+        { "name": "Jean Charles Blais" },
+        { "name": "Georg Baselitz" },
+        { "name": "Georg Baselitz" },
+        { "name": "Fernando Botero" },
+        { "name": "Pedro Almodóvar" },
+        { "name": "Yasmina Alaoui" },
+        { "name": "Pedro Almodóvar" },
+        { "name": "Karel Appel" },
+        { "name": "Ron Arad" },
+        { "name": "Pablo Atchugarry" },
+        { "name": "Georg Baselitz" },
+        { "name": "Jean Charles Blais" },
+        { "name": "Mel Bochner" },
+        { "name": "Fernando Botero" },
+        { "name": "Andre Brasilier" },
+        { "name": "Georg Baselitz" },
+        { "name": "Jean Charles Blais" },
+        { "name": "Mel Bochner" },
+        { "name": "Fernando Botero" },
+        { "name": "Andre Brasilier" },
     ];
 
     var tab = "#represented";
@@ -60,14 +60,14 @@ $(function () {
     });
 
 
-    $(window).scroll(function() {
+    $(window).on('scroll', function () {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
             current += size;
             switch (tab) {
-                case "#represented" :
+                case "#represented":
                     renderRepresentedContent()
                     break;
-                case "#works" :
+                case "#works":
                     renderWorksContent()
                     break;
             }
@@ -84,14 +84,14 @@ $(function () {
             if (current) {
                 aos += "aos-init aos-animate";
             }
-            content += '<div class="col-6 col-md-4 artist-block '+ aos +'" data-aos="fade-up" data-aos-duration="2500">';
+            content += '<div class="col-6 col-md-4 artist-block ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
             content += '<div class="img-hover-zoom img-hover-zoom--xyz position-relative">';
             content += '<a href="javascript:;">';
-            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/small/'+ index%10 +'.jpg"/>';
+            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/small/' + index % 10 + '.jpg"/>';
             content += '</a>';
             content += '<div class="position-absolute text-nowrap">';
             content += '<div class="artist">';
-            content += '<a href="javascript:;">'+ value.name +'</a>';
+            content += '<a href="javascript:;">' + value.name + '</a>';
             content += '</div>';
             content += '</div>';
             content += '</div>';
@@ -111,14 +111,14 @@ $(function () {
             if (current) {
                 aos += "aos-init aos-animate";
             }
-            content += '<div class="col-6 col-md-4 artist-block '+ aos +'" data-aos="fade-up" data-aos-duration="2500">';
+            content += '<div class="col-6 col-md-4 artist-block ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
             content += '<div class="img-hover-zoom img-hover-zoom--xyz position-relative">';
             content += '<a href="javascript:;">';
-            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/small/'+ index%10 +'.jpg"/>';
+            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/small/' + index % 10 + '.jpg"/>';
             content += '</a>';
             content += '<div class="position-absolute text-nowrap">';
             content += '<div class="artist">';
-            content += '<a href="javascript:;">'+ value.name +'</a>';
+            content += '<a href="javascript:;">' + value.name + '</a>';
             content += '</div>';
             content += '</div>';
             content += '</div>';
@@ -132,7 +132,7 @@ $(function () {
         $.each(data, function (index, value) {
             content += '<div class="col-6 col-md-3 animate__animated animate__fadeInUp animate__slower">';
             content += '<div class="py-3 text-uppercase">';
-            content += '<a class="list-name" href="javascript:;">'+ value.name +'</a>';
+            content += '<a class="list-name" href="javascript:;">' + value.name + '</a>';
             content += '</div>';
             content += '</div>';
         })
