@@ -89,7 +89,7 @@ $(function () {
             content += '<div class="col-6 col-md-4 artist-block ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
             content += '<div class="img-hover-zoom img-hover-zoom--xyz position-relative">';
             content += '<a href="javascript:;">';
-            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/forhim/' + index % 15 + '.png"/>';
+            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="./assets/images/forhim/' + index % 15 + '.png"/>';
             content += '</a>';
             content += '<div class="position-absolute text-nowrap">';
             content += '<div class="artist">';
@@ -116,7 +116,7 @@ $(function () {
             content += '<div class="col-6 col-md-4 artist-block ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
             content += '<div class="img-hover-zoom img-hover-zoom--xyz position-relative">';
             content += '<a href="javascript:;">';
-            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="/assets/images/forher/' + index % 15 + '.png"/>';
+            content += '<img class="img-fluid position-relative img-filter ls-is-cached lazyloaded" src="./assets/images/forher/' + index % 15 + '.png"/>';
             content += '</a>';
             content += '<div class="position-absolute text-nowrap">';
             content += '<div class="artist">';

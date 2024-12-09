@@ -1,7 +1,7 @@
 $(function () {
     var data = [
-        { "title": "Tailored Suits Line: Arctic Sartoria"},
-        { "title": "Cashmere Sets Line: Polar Luxe"},
+        { "title": "Tailored Suits Line: Arctic Sartoria" },
+        { "title": "Cashmere Sets Line: Polar Luxe" },
         { "title": "Loungewear Line: Aurora Comfort" },
         { "title": "Accessories Line: Frosted Elegance" },
         { "title": "Home Décor Line: Arctic Haven" },
@@ -38,7 +38,7 @@ $(function () {
             content += '</div>';
             content += '<div class="col-12 col-md-6 mt-5 ' + aos + '" data-aos="fade-up" data-aos-duration="2500">';
             content += '<a href="javascript:;">';
-            content += '<img class="img-fluid" src="/assets/images/hautecouture/' + index % 12 + '.png"/>';
+            content += '<img class="img-fluid" src="./assets/images/hautecouture/' + index % 12 + '.png"/>';
             content += '</a>';
             content += '</div>';
             $("#hautecoutureContent").append(content);
